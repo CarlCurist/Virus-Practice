@@ -1,0 +1,24 @@
+﻿生成启动时间为 2015/3/19 18:38:13。
+     1>项目“F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\复制文件到软盘根目录.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "复制文件到软盘根目录.cpp"
+         复制文件到软盘根目录.cpp
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(205): warning C4101: “szFileAddr”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(245): warning C4101: “szFileAddr”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(243): warning C4101: “NeedSectorNum”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(305): warning C4101: “szBuf”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(308): warning C4101: “NeedSectorNum”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(298): warning C4101: “File”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(305): warning C4101: “btemp”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(307): warning C4101: “btemp2”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(306): warning C4101: “FileSize”: 未引用的局部变量
+     1>f:\d盘备份\所有工具资料\病毒编程练习\fat12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.cpp(308): warning C4101: “SectorNum”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\Debug\复制文件到软盘根目录.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\Debug\复制文件到软盘根目录.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\Debug\复制文件到软盘根目录.lib" /MACHINE:X86 Debug\stdafx.obj
+         "Debug\复制文件到软盘根目录.obj"
+         复制文件到软盘根目录.vcxproj -> F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\Debug\复制文件到软盘根目录.exe
+     1>已完成生成项目“F:\D盘备份\所有工具资料\病毒编程练习\FAT12文件系统-复制文件到软盘根目录\复制文件到软盘根目录\复制文件到软盘根目录.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.62
