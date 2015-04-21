@@ -1,0 +1,69 @@
+org 100h
+DispStr:
+	;mov	ax, Msg
+;	mov	bp, ax			; ES:BP = 串地址
+;	mov	cx, 5			; CX = 串长度
+;	mov	ax, 01301h		; AH = 13,  AL = 01h
+;	mov	bx, 000ch		; 页号为0(BH = 0) 黑底红字(BL = 0Ch,高亮
+;	mov	dl, 8
+;	mov     dh, 3
+;	int	10h			; 10h 号中断
+;;;;;;;;;;;;;
+push path
+push ds
+call GetExeName
+pop ds
+add sp,2
+
+	mov	ax, path
+	mov	bp, ax			; ES:BP = 串地址
+	mov	cx, 16			; CX = 串长度
+	mov	ax, 01301h		; AH = 13,  AL = 01h
+	mov	bx, 000ch		; 页号为0(BH = 0) 黑底红字(BL = 0Ch,高亮
+	mov	dl, 8
+	mov     dh, 3
+	int	10h			; 10h 号中
+
+GetExeName:
+push bp
+mov bp,sp
+mov ax,[2ch]
+mov ds,ax
+xor bx,bx
+find_00:
+mov ax,[bx]
+inc bx
+test ax,ax
+jnz find_00
+add bx,3;跳过剩下的一个0和下两个字节
+
+;移动到文件最后一个字节
+move_end:
+mov al,byte [bx]
+inc bx
+test al,al
+jnz move_end
+
+;再移动回上一个'\'
+find_xie:
+mov al,byte[bx]
+dec bx
+cmp al,'\'
+jnz find_xie
+inc bx;此时bx就是文件名开始的偏移
+push ds
+mov si,[bp+4]
+mov es,[bp+2]
+copy_name:
+mov al,[bx]
+test al,al
+jz copy_name_end
+mov [es:si],al
+inc al
+jmp copy_name
+copy_name_end:
+ret
+
+
+Msg db "virus"
+path times 16 db 0;
