@@ -16,8 +16,10 @@ int findSection(char *name, PVOID file, int start)//ÕÒµ½PEÍ·ÖÐÃû×ÖÎª*nameµÄÇø¶Îµ
 	while (1)
 	{
 		OK = true;
-		for (int i = 0; *(name + i) != '\0'; i++)
+		for (int i = 0;; i++)
 		{
+			if (*(name + i) == '\0'&&*((PSTR)file + i + start) == '\0')
+				break;
 			if (*(name + i) != *((PSTR)file + i + start))
 			{
 				OK = false;
